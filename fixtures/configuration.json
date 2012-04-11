@@ -1,12 +1,25 @@
 {
     "env": {
         "dev": {
-            "hostname": "localhost:8080",
-            "name": "Configuration is King!"
+            "UserName"  : "dev_login",
+            "Password"  : "password",
+            "Debug"     : "True",
+            "Verbose"   : "True",
+            "ConfigFile": "some/my/path/devconfig.txt"
+        },
+        "test": {
+            "UserName"  : "qa_login",
+            "Password"  : "P@ssW0rd!",
+            "Debug"     : "False",
+            "Verbose"   : "True",
+            "ConfigFile": "some/my/path/qaconfig.txt"
         },
         "prod": {
-            "hostname": "json-presentation.heroku.com",
-            "name": "Convention over Configuration"
+            "UserName"  : "dev_login",
+            "Password"  : "",
+            "Debug"     : "False",
+            "Verbose"   : "False",
+            "ConfigFile": "fixtures/config.txt"
         }
     }
 }
